@@ -46,8 +46,14 @@
       <li><a href="">Ссылка с пустым href (номер 16)</a></li>
       <li><a>Cсылка без href (номер 17)</a></li>
       <li><a href="https://kubsu.ru/" rel = "nofollow">Ссылка, по которой запрещен переход поисковикам (номер 18)</a></li>
-      <li><a href="ftp://user:pass@theyoungbiba.github.io/source/slipknot.jpg">qwerty</a></li>
-      <li></li>
+      <li><noindex>
+        <a href="https://kubsu.ru/">Запрещенная для индексации ссылка (номер 19)</a>
+      </noindex></li>
+      <li><ol>
+        <li><a href="http://kubsu.ru/" title="title">Ссылка на сайт КубГУ</a></li>
+        <li><a href="https://kubsu.ru/" title="anotherTitle">Ссылка на сайт КубГУ</a></li>
+      </ol></li>
+      <li><a href="ftp://user:pass@theyoungbiba.github.io/source/slipknot.jpg">Ссылка на FTP сервере с авторизацией (номер 21)</a></li>
     </ul>
   </body>
 </html>
