@@ -16,15 +16,15 @@
           title="Это цветочек (номер 3)"
           id="linkToFlower"
         /></a></li>
-      <li><a href="/taskWEB_1/anotherIndex.html">Сокращенная ссылка на внутреннюю страницу (номер 4)</a></li>
+      <li><a href="/les1/anotherIndex.html">Сокращенная ссылка на внутреннюю страницу (номер 4)</a></li>
       <li>*Номер 5 находится на внутренней странице</li>
       <li><a href="#linkToFlower">Ссылка на фрагмент текущей страницы (номер 6)</a></li>
-      <li><a href="/taskWEB_1/anotherIndex.html?firstParametr=1&secondParametr=2&thirdParametr=3">Ссылка с тремя параметрами (номер 7)</a></li>
-      <li><a href="/taskWEB_1/anotherIndex.html?id=unknown">Ссылка с параметром id (номер 8)</a></li>
+      <li><a href="/les1/anotherIndex.html?firstParametr=1&secondParametr=2&thirdParametr=3">Ссылка с тремя параметрами (номер 7)</a></li>
+      <li><a href="/les1/anotherIndex.html?id=unknown">Ссылка с параметром id (номер 8)</a></li>
       <li><a href="anotherIndex.html">Относительная ссылка на страницу в текущем каталоге (номер 9)</a></li>
       <li><a href="about/about.html">Относительная ссылка на страницу в каталоге about (номер 10)</a></li>
-      <li><a href="../level2Page.html">Ссылка на страницу в каталоге на уровень выше предыдущего (номер 11)</a></li>
-      <li><a href="../../level1Page.html">Ссылка на страницу в каталоге на 2 уровyя выше предыдущего (номер 12)</a></li>
+      <li><a href="level1/level1.html">Ссылка на страницу в каталоге на уровень ниже нынешнего (на этой странице будет номер 11)</a></li>
+      <li><a href="level1/level2/level2.html">Ссылка на страницу в каталоге на 2 уровня ниже нынешнего (на этой странице будет номер 12)</a></li>
       <li><p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         <a href="https://kubsu.ru/">Nulla neque (номер 13)</a> assumenda ullam,
@@ -55,5 +55,61 @@
       </ol></li>
       <li><a href="ftp://user:pass@theyoungbiba.github.io/source/slipknot.jpg">Ссылка на FTP сервере с авторизацией (номер 21)</a></li>
     </ul>
+  <form>
+    <p>
+      <label for ="txt">ФИО (номер 1): </label>
+      <input type="text" placeholder="Введите ФИО" id="txt">
+    </p>
+    <p>
+      <label for ="tl">Телефон (номер 2): </label>
+      <input type="tel" placeholder="Введите телефон" id="tl">
+    </p>
+    <p>
+      <label for ="em">E-mail (номер 3): </label>
+      <input type="email" placeholder="Введите e-mail" id="em">
+    </p>
+    <p>
+      <label for="birthdate">Дата рождения (номер 4):</label>
+      <input type="date" id="birthdate">
+    </p>
+    Пол (номер 5):
+    <p>
+      <label for="male">Мужской</label>
+      <input id="male" name="agreement" type="radio">
+    </p>
+    <p>
+      <label for="female">Женский</label>
+      <input id="female" name="agreement" type="radio">
+    </p>
+    <p>
+      <label for="select-lang">Любимый язык программирования (номер 6):</label>
+      <select id="select-lang">
+        <option value="pascal">Pascal</option>
+        <option value="c">C</option>
+        <option value="c++">C++</option>
+        <option value="js">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="java" selected>Java</option>
+        <option value="haskel">Haskel</option>
+        <option value="clojure">Clojure</option>
+        <option value="prolog">Prolog</option>
+        <option value="scala">Scala</option>
+      </select>
+    </p>
+    <p>
+      <label for="biography">Биография (номер 7):</label> <br />
+      <textarea id="biography" cols="82" rows="10" placeholder="Введите биографию"></textarea>
+    </p>
+    <p>
+      <label for="agree">С контрактом ознакомлен (а)</label>
+      <input type="checkbox" id="agree">
+    </p>
+    <p>
+      <button type="submit">
+        Сохранить
+      </button>
+    </p>
+  </form>
   </body>
 </html>
