@@ -1,0 +1,67 @@
+header {
+    background-color: #e59023;
+}
+
+#hdCont {
+    max-width: 960px;
+    align-items: center;
+    margin: auto;
+    height: 120px;
+}
+header  img{
+    float: left;
+    margin: 10px;
+}
+header nav{
+    width: 100%;
+    text-align: right;
+    padding-top: 5px;
+}
+header nav a{
+    padding: 5px 8px;
+    color: blue;
+    text-decoration: none;
+}
+header h1{
+    text-align: left;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    background-color: #e59023;
+    padding: 10px;
+}
+footer p{
+    margin: 16px auto;
+    text-align: left !important;
+}
+
+.content {
+    max-width: 960px;
+    text-align: center;
+}
+
+#list > ul > li {
+    text-align: center;
+    list-style-type: none;
+}
+
+table, td, th {
+    border: 1px solid red;
+    margin: auto;
+}
+
+.tr1 {
+    background-color: white;
+}
+
+.tr2 {
+    background-color: darkgrey;
+}
+
+#form {
+    text-align: center;
+}
