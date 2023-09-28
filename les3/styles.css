@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
 }
@@ -46,6 +45,7 @@ footer p{
 }
 #table{
     overflow-y: auto;
+    margin-top: 10px;
 }
 
 table, td, th {
@@ -127,5 +127,11 @@ form textarea{
     #hdCont{
         display: flex;
     }
-
+    .mediaCont{
+        display: flex;
+        flex-direction: column;
+    }
+    #list{
+        order: -1;
+    }
 }
