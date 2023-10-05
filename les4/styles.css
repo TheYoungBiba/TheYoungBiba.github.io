@@ -1,0 +1,79 @@
+#hdCont {
+    max-width: 960px;
+}
+#footer {
+    background-color: #e59023;
+}
+.content {
+    max-width: 960px;
+}
+#table{
+    margin-top: 10px;
+}
+table, td, th {
+    border: 1px solid red;
+}
+nav {
+    background-color: #e59023;
+}
+#siteName {
+    background-color: #e59023;
+    height: 120px;
+}
+#logo {
+    height: 120px;
+    width: 170px;
+    float: left;
+    background-color: #e59023;
+}
+#goodID div{
+    width: max-content;
+}
+
+
+
+form textarea{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    resize: vertical;
+}
+
+@media screen and (orientation: landscape) {
+    header{
+        background-color: #e59023;
+    }
+    .onlyPain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+    }
+
+    form{
+        margin-top: 20px;
+    }
+
+
+    #goodID{
+        order: -1;
+        margin-top: 0 !important;
+        display: flex;
+        justify-content: end;
+    }
+
+
+    #siteName{
+        height: 100%;
+    }
+    #hdCont{
+        display: flex;
+    }
+    .mediaCont{
+        display: flex;
+        flex-direction: column;
+    }
+    .dd{
+        order: -1;
+    }
+}
