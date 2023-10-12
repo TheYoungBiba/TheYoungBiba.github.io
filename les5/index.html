@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Задание 5</title>
+</head>
+<body>
+  <form id="calc">
+    <input id="countOfGoods" name="countOfGoods" type="text" placeholder="Введите количество товаров">
+      <div>
+          <select id="goods">
+              <option data-price="100500" value="iphone15Pro" selected>iPhone 15 Pro - 100500 руб</option>
+              <option data-price="300" value="pixel8Pro">Google Pixel 8 Pro - 300 руб</option>
+              <option data-price="300" value="onePlus11">OnePlus 11 - 300 руб</option>
+              <option data-price="300" value="s23Ultra">Galaxy S23 Ultra - 300 руб</option>
+          </select>
+      </div>
+      <div id="result"></div>
+    <button id="toCalc" type="submit">Скалькулировать</button>
+  </form>
+<script src="script.js" defer></script>
+</body>
+</html>
