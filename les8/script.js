@@ -1,44 +1,44 @@
 function homeURL() {
-    history.pushState({modal: "close"}, "ModalOut", "./index8.html");
+    history.pushState({modal: "close"}, "ModalOut", "index.html");
 }
 
 window.onload = function (event) {
-    let stateStatus = event.currentTarget.history.state;
-    if(stateStatus && stateStatus.modal === "open") {
+    let state = event.currentTarget.history.state;
+    if(state && state.modal === "open") {
         homeURL();
     }
 
-    document.getElementById("forma").addEventListener("submit", function (ev) {
-        ev.preventDefault();
-        let slapform = new Slapform();
-        let infor = document.getElementById("infor");
-        slapform.submit({
+    document.getElementById("form").addEventListener("submit", function (submitEvent) {
+        submitEvent.preventDefault();
+        let slap = new Slapform();
+        let information = document.getElementById("information");
+        slap.submit({
             form: 'qJp4N7SKz',
             data: {
-                fio: document.getElementById("fio").value,
+                name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
-                tel: document.getElementById("tel").value,
-                organ: document.getElementById("organ").value,
-                soob: document.getElementById("soob").value,
-                polit: document.getElementById("polit").value
+                phoneNumber: document.getElementById("phoneNumber").value,
+                organization: document.getElementById("organization").value,
+                comment: document.getElementById("comment").value,
+                privacyPolicy: document.getElementById("privacyPolicy").value
             }
         }).then(function () {
-            infor.style.color = "green";
-            infor.innerHTML = "Данные отправлены";
-            let s = "input:not([type=\"checkbox\"]), #soob";
+            information.style.color = "green";
+            information.innerHTML = "Отправлено";
+            let s = "input:not([type=\"checkbox\"]), #comment";
             let inps = document.querySelectorAll(s);
             for (let i = 0; i < inps.length; ++i) {
                 localStorage.removeItem(inps[i].id);
                 inps[i].value = "";
             }
-            document.getElementById("polit").checked = false;
+            document.getElementById("privacyPolicy").checked = false;
         }).catch(function () {
-            infor.style.color = "red";
-            infor.innerHTML = "Данные не отправлены";
+            information.style.color = "red";
+            information.innerHTML = "Не отправлено";
         });
     });
 
-    document.querySelector(".clsbt").addEventListener("click", function () {
+    document.querySelector(".cls").addEventListener("click", function () {
         history.pushState({modal: "open"}, "ModalIn", "?form=open");
     });
 
@@ -79,8 +79,8 @@ window.onload = function (event) {
             inps[i].value = val;
         }
     }
-    let polit = localStorage.getItem("polit") === 'true';
-    document.getElementById("polit").checked = polit;
+    let privacyPolicy = localStorage.getItem("privacyPolicy") === 'true';
+    document.getElementById("privacyPolicy").checked = privacyPolicy;
 }
 
 window.onpopstate = function (event) {

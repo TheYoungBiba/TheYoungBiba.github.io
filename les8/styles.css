@@ -1,0 +1,7 @@
+.cls {
+    display: block;
+    margin: auto;
+}
+input:not([type="checkbox"]), textarea {
+    width: 100%;
+}
