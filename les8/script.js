@@ -42,8 +42,7 @@ window.onload = function (event) {
         history.pushState({modal: "open"}, "ModalIn", "?form=open");
     });
 
-    let modalPop = document.getElementById("exform");
-    modalPop.addEventListener("click", function (e) {
+    document.getElementById("exform").addEventListener("click", function (e) {
         if (e.target === document.getElementById("exform")) {
             homeURL();
         }
