@@ -5,3 +5,14 @@
 input:not([type="checkbox"]), textarea {
     width: 100%;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background: red;
+    margin: auto;
+}
